@@ -1,0 +1,27 @@
+# Ignore Terraform State Files
+**/.terraform/
+**/.terraform.lock.hcl
+**/*.tfstate
+**/*.tfstate.backup
+
+# Ignore Secrets and Variable Files
+**/*.tfvars
+!terraform.tfvars.example  # Allow the example vars file
+**/backend.tfvars
+
+# Ignore Logs and Backup Files
+**/*.log
+**/*.bak
+**/*.tmp
+
+# Ignore IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Ignore Build and CI/CD Temporary Files
+.github/workflows/.terraform-cache/
+.github/workflows/.terraform.lock.hcl
