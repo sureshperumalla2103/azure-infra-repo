@@ -4,10 +4,7 @@
 **/*.tfstate
 **/*.tfstate.backup
 
-# Ignore Secrets and Variable Files
-**/*.tfvars
-!terraform.tfvars.example  # Allow the example vars file
-**/backend.tfvars
+
 
 # Ignore Logs and Backup Files
 **/*.log
